@@ -7,19 +7,11 @@
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
 <img src="https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Exercises-3+-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Projects-6+-blueviolet?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Projects-7+-blueviolet?style=for-the-badge" />
 
 </div>
 
 ---
-
-## 📚 Exercises
-
-| # | File | Topic | Status |
-|---|---|---|---|
-| 01 | `01_hello_world.cpp` | First C++ program | ✅ |
-| 02 | `02_variables.cpp` | Variables & data types | ✅ |
-| 03 | `03_user_input.cpp` | User input with `cin` | ✅ |
 
 ## 🔥 Projects
 
@@ -31,63 +23,54 @@
 | Battle Arena v1.0 | RPG battle game with waves, levels & combat | `projects/battle_game.cpp` |
 | Battle Arena v2.0 | ADVANCED RPG with classes, shop, status effects | `projects/battle_arena_advanced.cpp` |
 | Rock Paper Scissors | Classic game — vs computer or 2 players | `projects/rock_paper_scissors.cpp` |
+| Duel Arena | Advanced 2-player RPG with 6 classes & ultimates | `projects/duel_arena.cpp` |
 
 ---
 
-## ✊ Rock Paper Scissors v1.0
+## ⚔️ Duel Arena — Advanced 2-Player Battle (Featured)
 
-The classic game everyone knows! Simple, fun, and anyone can play.
+An advanced turn-based RPG where TWO players battle each other. 6 classes, 4 attack types, status effects, ultimates, shop, and full match stats!
+
+### Choose Your Class
+1. **Warrior** — Tanky. Special: Berserk Rage. Ultimate: WHIRLWIND (3 hits)
+2. **Mage** — Glass cannon. Special: Fireball. Ultimate: METEOR STORM
+3. **Rogue** — High crit. Special: Shadow Strike. Ultimate: ASSASSINATE (instakill)
+4. **Paladin** — Healer. Special: Holy Light. Ultimate: DIVINE JUDGMENT
+5. **Archer** — Fast. Special: Multi-Shot. Ultimate: RAIN OF ARROWS
+6. **Necromancer** — Lifesteal. Special: Life Drain. Ultimate: DEATH CURSE
 
 ### Features
-1. *vs Computer* — Play against AI
-2. *2 Players* — Play with a friend on the same device
-3. *Best of 3/5/7* — Choose match length
-4. *Score Tracking* — See who's winning after each round
-5. *Hidden Input* — 2P mode hides your choice from opponent
-6. *ASCII Art* — Visual display of each choice
-7. *Champion Screen* — Winner gets crowned!
+1. 6 character classes with unique stats & abilities
+2. 4 attack types: Basic, Heavy, Special, Ultimate
+3. 8 status effects: Poison, Burn, Stun, Shield, Regen, Bleed, Weaken, Rage
+4. Combo system — consecutive hits build damage multiplier
+5. 3 resources: HP, Mana, Stamina
+6. Shop between rounds — buy potions & permanent upgrades
+7. Best of 3/5/7 match system
+8. Gold economy — earn gold per round win
+9. Critical hits & dodge mechanics
+10. Turn order based on speed stat
+11. Champion screen with full match stats
 
 ### How to Run
 ```bash
-g++ projects/rock_paper_scissors.cpp -o rps
-./rps
+g++ projects/duel_arena.cpp -o duel
+./duel
 ```
 
 ---
 
 ## 📈 Learning Roadmap
 
-- [x] Hello World
-- [x] Variables & Data Types
-- [x] User Input
-- [x] Functions
-- [x] Loops
-- [x] Arrays
-- [x] Switch-case
-- [x] Math library (sqrt, pow)
-- [x] 2D Arrays
-- [x] Random numbers
-- [x] Game logic & AI
-- [x] Structs
-- [x] Enums
-- [x] ASCII art
+- [x] Hello World, Variables, User Input, Functions
+- [x] Loops, Arrays, Switch-case, Math library
+- [x] 2D Arrays, Random numbers, Game logic & AI
+- [x] Structs, Enums, Combo systems, Economy
+- [x] Advanced status effects, Multi-resource management
 - [ ] Data Structures & Algorithms
 - [ ] Object-Oriented Programming
 - [ ] File I/O (save/load)
 - [ ] Pointers & Memory
-
----
-
-## 🏃 How to Run
-
-```bash
-g++ projects/space_terminal.cpp -o space_terminal
-g++ projects/calculator.cpp -o calculator -lm
-g++ projects/tic_tac_toe.cpp -o ttt
-g++ projects/battle_game.cpp -o battle
-g++ projects/battle_arena_advanced.cpp -o battle2
-g++ projects/rock_paper_scissors.cpp -o rps
-```
 
 ---
 
