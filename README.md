@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
 <img src="https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Exercises-3+-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Projects-1+-blueviolet?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Projects-2+-blueviolet?style=for-the-badge" />
 
 </div>
 
@@ -26,6 +26,7 @@
 | Project | Description | File |
 |---|---|---|
 | Space Terminal v1.0 | Futuristic space mission control terminal | `projects/space_terminal.cpp` |
+| Calculator v1.0 | Full-featured calculator with memory & history | `projects/calculator.cpp` |
 
 ---
 
@@ -48,6 +49,35 @@ A fully interactive C++ terminal application:
 
 ---
 
+## 🧮 Calculator v1.0 — Phase 3 Project
+
+A full-featured command-line calculator built with clean modular design.
+
+### Features
+1. *Basic Operations* — Add, Subtract, Multiply, Divide
+2. *Advanced Math* — Power, Square Root, Modulus, Factorial
+3. *Percentage Calculator* — Quick percentage calculations
+4. *Memory Functions* — M+, M-, MR, MC (like a real calculator)
+5. *History* — Shows last 5 calculations
+6. *Error Handling* — Division by zero, negative sqrt, overflow protection
+
+### Concepts Used
+- Functions (modular architecture)
+- Switch-case (menu system)
+- While loop (continuous operation)
+- Arrays (history storage)
+- Math library (sqrt, pow)
+- Global variables (memory management)
+- Input validation
+
+### How to Run
+```bash
+g++ projects/calculator.cpp -o calculator -lm
+./calculator
+```
+
+---
+
 ## 📈 Learning Roadmap
 
 - [x] Hello World
@@ -57,6 +87,7 @@ A fully interactive C++ terminal application:
 - [x] Loops
 - [x] Arrays
 - [x] Switch-case
+- [x] Math library (sqrt, pow)
 - [ ] Data Structures & Algorithms
 - [ ] Object-Oriented Programming
 - [ ] File I/O
@@ -74,6 +105,10 @@ g++ 01_hello_world.cpp -o hello
 # Compile the Space Terminal
 g++ projects/space_terminal.cpp -o space_terminal
 ./space_terminal
+
+# Compile the Calculator
+g++ projects/calculator.cpp -o calculator -lm
+./calculator
 ```
 
 ---
