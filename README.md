@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
 <img src="https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Exercises-3+-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Projects-4+-blueviolet?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Projects-5+-blueviolet?style=for-the-badge" />
 
 </div>
 
@@ -29,42 +29,47 @@
 | Calculator v1.0 | Full-featured calculator with memory & history | `projects/calculator.cpp` |
 | Tic Tac Toe v1.0 | Play vs friend or smart AI computer | `projects/tic_tac_toe.cpp` |
 | Battle Arena v1.0 | RPG battle game with waves, levels & combat | `projects/battle_game.cpp` |
+| Battle Arena v2.0 | ADVANCED RPG with classes, shop, status effects | `projects/battle_arena_advanced.cpp` |
 
 ---
 
-## 🗡️ Battle Arena v1.0 — Featured Game
+## ⚔️ Battle Arena v2.0 — Advanced Edition (Featured)
 
-A text-based RPG battle game. Fight through waves of enemies, level up, and survive!
+An advanced text-based RPG battle game. Choose your class, fight through 15 waves of enemies, buy gear, and defeat the Final Boss!
+
+### Choose Your Class
+1. **Warrior** — High HP, Strong Defense. Special: BERSERK (double damage)
+2. **Mage** — High Mana, Powerful Spells. Special: FIREBALL (massive damage + burn)
+3. **Rogue** — Balanced, High Crit. Special: SHADOW STRIKE (always crits + poison)
 
 ### Features
-1. *Turn-Based Combat* — Player vs Enemy, take turns attacking
-2. *Attack Types* — Light Attack, Heavy Attack, Special Move
-3. *Critical Hits* — 20% chance for double damage
-4. *Dodge System* — Enemies can miss, you can dodge
-5. *Mana System* — Special moves cost mana, regenerates over time
-6. *Health Potions* — Heal up when low on HP
-7. *Defend* — Reduce incoming damage for one turn
-8. *Wave System* — 10 different enemies, each stronger than the last
-9. *Level Up* — Every 2 waves, get stronger stats and full heal
-10. *Score Tracking* — Earn points per wave, beat your high score
-
-### Enemies
-Goblin → Skeleton → Dark Knight → Orc Warrior → Shadow Mage → Ice Golem → Fire Demon → Dragon Lord → Undead King → Final Boss
+1. *3 Character Classes* — Each with unique stats and special abilities
+2. *Status Effects* — Poison, Burn, Stun, Regen, Weaken
+3. *Shop System* — Buy potions, upgrade weapons & armor between waves
+4. *Gold Economy* — Earn gold from battles, spend in shop
+5. *Weapon & Armor Upgrades* — Permanent stat boosts
+6. *Combo System* — Consecutive hits increase damage
+7. *Boss Battles* — Every 5th wave is a boss with special AI
+8. *15 Enemy Types* — Goblin to Final Boss, each stronger
+9. *Critical Hits & Dodges* — RNG-based combat mechanics
+10. *Level Up System* — Get stronger every 2 waves
+11. *Score Tracking* — Beat your high score each run
 
 ### Concepts Used
-- Structs (player & enemy data structures)
+- Structs with nested data
+- Enums (status effects)
+- Arrays (inventory, enemy list, shop items)
 - Functions (modular game logic)
-- Random numbers (damage variance, crits, dodges)
-- Switch-case (action menu)
-- Loops (battle loop, wave system)
-- Health/Mana bar display
+- Random numbers (RNG combat)
+- Switch-case (menus, class abilities)
+- Loops (game loop, wave system, shop)
+- String manipulation (display)
 - Input validation
-- Game state management
 
 ### How to Run
 ```bash
-g++ projects/battle_game.cpp -o battle
-./battle
+g++ projects/battle_arena_advanced.cpp -o battle2
+./battle2
 ```
 
 ---
@@ -83,9 +88,12 @@ g++ projects/battle_game.cpp -o battle
 - [x] Random numbers
 - [x] Game logic & AI
 - [x] Structs
+- [x] Enums
+- [x] Combo systems
+- [x] Economy/Gold system
 - [ ] Data Structures & Algorithms
 - [ ] Object-Oriented Programming
-- [ ] File I/O
+- [ ] File I/O (save/load)
 - [ ] Pointers & Memory
 
 ---
@@ -102,6 +110,7 @@ g++ projects/space_terminal.cpp -o space_terminal
 g++ projects/calculator.cpp -o calculator -lm
 g++ projects/tic_tac_toe.cpp -o ttt
 g++ projects/battle_game.cpp -o battle
+g++ projects/battle_arena_advanced.cpp -o battle2
 ```
 
 ---
