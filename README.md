@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
 <img src="https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Exercises-3+-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Projects-5+-blueviolet?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Projects-6+-blueviolet?style=for-the-badge" />
 
 </div>
 
@@ -30,46 +30,27 @@
 | Tic Tac Toe v1.0 | Play vs friend or smart AI computer | `projects/tic_tac_toe.cpp` |
 | Battle Arena v1.0 | RPG battle game with waves, levels & combat | `projects/battle_game.cpp` |
 | Battle Arena v2.0 | ADVANCED RPG with classes, shop, status effects | `projects/battle_arena_advanced.cpp` |
+| Rock Paper Scissors | Classic game — vs computer or 2 players | `projects/rock_paper_scissors.cpp` |
 
 ---
 
-## ⚔️ Battle Arena v2.0 — Advanced Edition (Featured)
+## ✊ Rock Paper Scissors v1.0
 
-An advanced text-based RPG battle game. Choose your class, fight through 15 waves of enemies, buy gear, and defeat the Final Boss!
-
-### Choose Your Class
-1. **Warrior** — High HP, Strong Defense. Special: BERSERK (double damage)
-2. **Mage** — High Mana, Powerful Spells. Special: FIREBALL (massive damage + burn)
-3. **Rogue** — Balanced, High Crit. Special: SHADOW STRIKE (always crits + poison)
+The classic game everyone knows! Simple, fun, and anyone can play.
 
 ### Features
-1. *3 Character Classes* — Each with unique stats and special abilities
-2. *Status Effects* — Poison, Burn, Stun, Regen, Weaken
-3. *Shop System* — Buy potions, upgrade weapons & armor between waves
-4. *Gold Economy* — Earn gold from battles, spend in shop
-5. *Weapon & Armor Upgrades* — Permanent stat boosts
-6. *Combo System* — Consecutive hits increase damage
-7. *Boss Battles* — Every 5th wave is a boss with special AI
-8. *15 Enemy Types* — Goblin to Final Boss, each stronger
-9. *Critical Hits & Dodges* — RNG-based combat mechanics
-10. *Level Up System* — Get stronger every 2 waves
-11. *Score Tracking* — Beat your high score each run
-
-### Concepts Used
-- Structs with nested data
-- Enums (status effects)
-- Arrays (inventory, enemy list, shop items)
-- Functions (modular game logic)
-- Random numbers (RNG combat)
-- Switch-case (menus, class abilities)
-- Loops (game loop, wave system, shop)
-- String manipulation (display)
-- Input validation
+1. *vs Computer* — Play against AI
+2. *2 Players* — Play with a friend on the same device
+3. *Best of 3/5/7* — Choose match length
+4. *Score Tracking* — See who's winning after each round
+5. *Hidden Input* — 2P mode hides your choice from opponent
+6. *ASCII Art* — Visual display of each choice
+7. *Champion Screen* — Winner gets crowned!
 
 ### How to Run
 ```bash
-g++ projects/battle_arena_advanced.cpp -o battle2
-./battle2
+g++ projects/rock_paper_scissors.cpp -o rps
+./rps
 ```
 
 ---
@@ -89,8 +70,7 @@ g++ projects/battle_arena_advanced.cpp -o battle2
 - [x] Game logic & AI
 - [x] Structs
 - [x] Enums
-- [x] Combo systems
-- [x] Economy/Gold system
+- [x] ASCII art
 - [ ] Data Structures & Algorithms
 - [ ] Object-Oriented Programming
 - [ ] File I/O (save/load)
@@ -101,16 +81,12 @@ g++ projects/battle_arena_advanced.cpp -o battle2
 ## 🏃 How to Run
 
 ```bash
-# Compile any exercise
-g++ 01_hello_world.cpp -o hello
-./hello
-
-# Compile any project
 g++ projects/space_terminal.cpp -o space_terminal
 g++ projects/calculator.cpp -o calculator -lm
 g++ projects/tic_tac_toe.cpp -o ttt
 g++ projects/battle_game.cpp -o battle
 g++ projects/battle_arena_advanced.cpp -o battle2
+g++ projects/rock_paper_scissors.cpp -o rps
 ```
 
 ---
