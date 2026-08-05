@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
 <img src="https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Exercises-3+-blue?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Projects-3+-blueviolet?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Projects-4+-blueviolet?style=for-the-badge" />
 
 </div>
 
@@ -28,66 +28,43 @@
 | Space Terminal v1.0 | Futuristic space mission control terminal | `projects/space_terminal.cpp` |
 | Calculator v1.0 | Full-featured calculator with memory & history | `projects/calculator.cpp` |
 | Tic Tac Toe v1.0 | Play vs friend or smart AI computer | `projects/tic_tac_toe.cpp` |
+| Battle Arena v1.0 | RPG battle game with waves, levels & combat | `projects/battle_game.cpp` |
 
 ---
 
-## 🚀 Space Terminal v1.0
+## 🗡️ Battle Arena v1.0 — Featured Game
 
-A fully interactive C++ terminal application:
-
-1. *Rocket Launch* — Live countdown with launch sequence
-2. *Planet Explorer* — All 8 planets with real distance data
-3. *Space Quiz* — Test your space knowledge
-4. *Cargo Calculator* — Weight calculator with safety limits
-
-### Concepts Used
-- Functions, Arrays, Loops, Switch-case, Thread sleep, ASCII art
-
----
-
-## 🧮 Calculator v1.0
-
-A full-featured command-line calculator.
+A text-based RPG battle game. Fight through waves of enemies, level up, and survive!
 
 ### Features
-1. Basic Operations — Add, Subtract, Multiply, Divide
-2. Advanced Math — Power, Square Root, Modulus, Factorial
-3. Percentage Calculator
-4. Memory Functions — M+, M-, MR, MC
-5. History — Shows last 5 calculations
-6. Error Handling — Division by zero, negative sqrt, overflow protection
+1. *Turn-Based Combat* — Player vs Enemy, take turns attacking
+2. *Attack Types* — Light Attack, Heavy Attack, Special Move
+3. *Critical Hits* — 20% chance for double damage
+4. *Dodge System* — Enemies can miss, you can dodge
+5. *Mana System* — Special moves cost mana, regenerates over time
+6. *Health Potions* — Heal up when low on HP
+7. *Defend* — Reduce incoming damage for one turn
+8. *Wave System* — 10 different enemies, each stronger than the last
+9. *Level Up* — Every 2 waves, get stronger stats and full heal
+10. *Score Tracking* — Earn points per wave, beat your high score
+
+### Enemies
+Goblin → Skeleton → Dark Knight → Orc Warrior → Shadow Mage → Ice Golem → Fire Demon → Dragon Lord → Undead King → Final Boss
+
+### Concepts Used
+- Structs (player & enemy data structures)
+- Functions (modular game logic)
+- Random numbers (damage variance, crits, dodges)
+- Switch-case (action menu)
+- Loops (battle loop, wave system)
+- Health/Mana bar display
+- Input validation
+- Game state management
 
 ### How to Run
 ```bash
-g++ projects/calculator.cpp -o calculator -lm
-./calculator
-```
-
----
-
-## 🎮 Tic Tac Toe v1.0
-
-Play the classic Tic Tac Toe game — vs a friend or vs a smart AI!
-
-### Features
-1. *2 Player Mode* — Play with a friend, take turns
-2. *vs Computer* — AI that tries to win, blocks your moves, takes center/corners
-3. *Input Validation* — Handles invalid slots and bad input
-4. *Win Detection* — Checks rows, columns, and diagonals
-5. *Draw Detection* — Knows when the board is full
-
-### Concepts Used
-- 2D Arrays (game board)
-- Functions (game logic)
-- Loops (game loop, win checking)
-- Conditionals (win/draw detection)
-- Random numbers (computer moves)
-- Input validation (cin.fail handling)
-
-### How to Run
-```bash
-g++ projects/tic_tac_toe.cpp -o ttt
-./ttt
+g++ projects/battle_game.cpp -o battle
+./battle
 ```
 
 ---
@@ -105,6 +82,7 @@ g++ projects/tic_tac_toe.cpp -o ttt
 - [x] 2D Arrays
 - [x] Random numbers
 - [x] Game logic & AI
+- [x] Structs
 - [ ] Data Structures & Algorithms
 - [ ] Object-Oriented Programming
 - [ ] File I/O
@@ -119,17 +97,11 @@ g++ projects/tic_tac_toe.cpp -o ttt
 g++ 01_hello_world.cpp -o hello
 ./hello
 
-# Compile the Space Terminal
+# Compile any project
 g++ projects/space_terminal.cpp -o space_terminal
-./space_terminal
-
-# Compile the Calculator
 g++ projects/calculator.cpp -o calculator -lm
-./calculator
-
-# Compile Tic Tac Toe
 g++ projects/tic_tac_toe.cpp -o ttt
-./ttt
+g++ projects/battle_game.cpp -o battle
 ```
 
 ---
