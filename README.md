@@ -67,3 +67,23 @@ g++ projects/battle_royale_gfx.cpp -o brgfx
 *⭐ Star this repo if you found it helpful!*
 
 *Built with passion by [Aanad](https://github.com/aanand565336-spec)*
+
+## Last Dawn: Fall of Humanity (Latest Project)
+
+A 9-region open world survival horror game in C++ with:
+- 9 regions: Northern Forest, Downtown, Abandoned Suburbs, River Side, East Harbor, Industrial Zone, Military Base, Underground Lab, South Farmlands
+- Zombie AI (walkers + runners) with chase behavior
+- Inventory system: torch, first aid, baseball bat, safe house key
+- Combat system with melee weapons
+- Story cutscenes
+- Full ASCII world map with markers
+- Win condition: find all items and reach the East Harbor safe house
+
+### Play the HTML5 version (browser, mobile + desktop):
+[last_dawn_world.html](projects/last_dawn_world.html)
+
+### Compile C++ version:
+```bash
+g++ -o last_dawn projects/LastDawnGame.cpp -std=c++17
+./last_dawn
+```
